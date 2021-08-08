@@ -1,0 +1,10 @@
+Numero das questoes a serem feitas:
+
+    - 11
+    - 15
+    - 16
+    - 17
+    - 20
+    - 24
+    - 34
+    - 37
