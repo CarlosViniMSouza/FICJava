@@ -19,7 +19,7 @@ public class Cap7Q9 {
     i) Escreva uma instrucao 'for' aninhada que inicializa cada elemento de t como zero.
     j) Escreva uma instruçao 'for' aninhada que insere os valores para os elementos de t a partir do usuario.
     k) Escreva uma serie de instrucoes que determina e exibe o valor menor em t.
-    I) Escreva uma unica instrucao printf que exibe os elementos da primeira linha de t.
+    i) Escreva uma unica instrucao printf que exibe os elementos da primeira linha de t.
     m) Escreva uma instrucao que soma os elementos da terceira coluna de t. Não utilize repeticao.
     n) Escreva uma serie de instrucoes que exibe o conteudo de t no formato tabular. Liste os indices de coluna
     como titulos na parte superior e liste os indices de linha a esquerda de cada linha.
@@ -86,8 +86,19 @@ public class Cap7Q9 {
             System.out.println("Less Number: " + t[1][0]);
         }
 
-        // I) Escreva uma unica instrucao printf que exibe os elementos da primeira linha de t.
+        // i) Escreva uma unica instrucao printf que exibe os elementos da primeira linha de t.
         System.out.printf("First line: %s", Arrays.toString(t[0]));
+
+        // m) Escreva uma instrucao que soma os elementos da terceira coluna de 't' e não utilize repeticao. Resp:
+        int sum = t[0][2] + t[1][2];
+        System.out.println("\nThe sum is: " + sum);
+
+        // n) Escreva uma serie de instrucoes que exibe o conteudo de t no formato tabular. Liste os indices de coluna
+        // como titulos na parte superior e liste os indices de linha a esquerda de cada linha.
+        System.out.printf( "\t\t%s %s %s\n" , "Column1", "Column2", "Column3");
+
+        System.out.printf( "Line1\t\t%s\t\t%s\t\t%s\n" , t[0][0], t[0][1], t[0][2]);
+        System.out.printf( "Line2\t\t%s\t\t%s\t\t%s\n" , t[1][0], t[1][1], t[1][2]);
 
     }
 }
