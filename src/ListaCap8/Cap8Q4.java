@@ -9,7 +9,56 @@ public class Cap8Q4 {
     flutuante maiores que 0,0 e menores que 20,0. Escreva um programa para testar a classe 'Rectangle'.
      */
 
-    public static void main(String []args) {
+    static class Rectangle {
 
+        private float length;
+        private float width;
+
+        public Rectangle(float length, float width) {
+            this.length = length;
+            this.width = width;
+        }
+
+        public boolean setLength(float length) {
+            return length > 0.0 && length < 20.0;
+        }
+
+        public boolean setWidth(float width) {
+            return width > 0.0 && width < 20.0;
+        }
+
+        public float getLength() {
+
+            return length;
+        }
+
+        public float getWidth() {
+
+            return width;
+        }
+
+        public void Perimeter() {
+            if (setLength(length) && setWidth(width)) {
+                System.out.println("Your perimeter is: " + 2 * (getLength() + getWidth()));
+            } else {
+                System.out.println("Error");
+            }
+
+        }
+
+        public void Area() {
+            if (setLength(length) && setWidth(width)) {
+                System.out.println("Your perimeter is: " + (getLength() * getWidth()));
+            } else {
+                System.out.println("Error");
+            }
+        }
     }
+
+    public static void main(String []args) {
+        Rectangle calc1 = new Rectangle(19.0f, 10.0f);
+        calc1.Perimeter();
+        calc1.Area();
+    }
+
 }

@@ -17,7 +17,34 @@ public class Cap8Q12 {
     c) Imprimir numeros Complex na forma (a, b), onde 'a' eh a parte real e 'b' eh a parte imaginaria.
      */
 
-    public static void main(String []args) {
+    static class Complex {
 
+        private float real1, real2, imag1, imag2;
+
+        public Complex(float real1, float imag1) {
+            this.real1 = real1;
+            this.imag1 = imag1;
+            this.real2 = real2;
+            this.imag2 = imag2;
+        }
+
+        public void Sum() {
+            System.out.println("Sum of parts real: " + (real1 + real2));
+            System.out.println("Sum of parts imaginaries: " + (imag1 + imag2));
+        }
+
+        public void Sub() {
+            System.out.println("Sub of parts real: " + (real1 - real2));
+            System.out.println("Sub of parts imaginaries: " + (imag1 + imag2));
+        }
+
+        public void Form() {
+            System.out.println("Form (I): (" + real1 + ", " + imag1 + ")");
+            System.out.println("Form (II): (" + real2 + ", " + imag2 + ")");
+        }
+    }
+
+    public static void main(String []args) {
+        Complex eq1 = new Complex(2.0f, 4.5f);
     }
 }
