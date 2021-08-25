@@ -21,7 +21,7 @@ public class Cap8Q12 {
 
         private float real1, real2, imag1, imag2;
 
-        public Complex(float real1, float imag1) {
+        public Complex(float real1, float imag1, float real2, float imag2) {
             this.real1 = real1;
             this.imag1 = imag1;
             this.real2 = real2;
@@ -45,6 +45,9 @@ public class Cap8Q12 {
     }
 
     public static void main(String []args) {
-        Complex eq1 = new Complex(2.0f, 4.5f);
+        Complex equation = new Complex(2.0f, 4.5f, 4.0f, -3.5f);
+        equation.Sum();
+        equation.Sub();
+        equation.Form();
     }
 }
