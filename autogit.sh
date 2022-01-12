@@ -1,4 +1,4 @@
 git add -A
-git commit -m "src -> reformated"
+git commit -m "README -> alt"
 git push
 git status
